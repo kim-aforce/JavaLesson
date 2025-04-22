@@ -54,7 +54,7 @@ public class java_kiso_1 {
 //	各計算結果を1行ずつ出力します。
 		int num14 = 8;
 		int num14a = 3;
-		System.out.println("問14 : 足し算　- " + (num14 + num14a));
+		System.out.println("問14 : \n足し算　- " + (num14 + num14a));
 		System.out.println("引き算 - " + (num14 - num14a));
 		System.out.println("掛け算 - " + (num14 * num14a));
 		System.out.println("割り算 - " + (num14 / num14a));
@@ -77,5 +77,14 @@ public class java_kiso_1 {
 		double discount = num16 * 0.7;
 		System.out.printf("問16：12,000円の30％引きの値段は %,d円%n", (int)discount);
 		//%,dはNumberFormatを使ってコンマが表示できる。
+//問17.	次のコードの出力は？ false
+//問18.	次のコードの出力は？ true
+//問19.	次のコードの出力は？ false
+//問20.	次のJavaコードを見て、画面に表示される結果を答えなさい。 答え：割引対象
+		
+		
+		
+		
+		
 	}	
 }
