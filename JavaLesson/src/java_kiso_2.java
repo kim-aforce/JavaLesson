@@ -1,4 +1,3 @@
-
 public class java_kiso_2 {
 	public static void main(String arg[]) {
 //		問1.	変数を宣言して値を表示しよう
@@ -29,21 +28,25 @@ public class java_kiso_2 {
 //		文字列型 (String) の変数 name に "Java" を代入する。
 //		小数 (double) の変数 version に 17.0 を代入する。
 //		真偽値 (boolean) の変数 isFun に true を代入する。
-		String name = "Java"
-		System.out.println("問4：" +);
+		String name = "Java";
+		double version = 17.0;
+		boolean isFun = true;
+		System.out.println("問4：" + name + version + isFun);
 //	問5.	ユーザーからの入力を受け取ろう
 //		（ユーザーが "太郎" と入力した場合）
 //		Scanner を使ってユーザーの名前を入力させる。
 //		こんにちは, [名前] さん！ というメッセージを表示する。
-		System.out.println("問5：" +);
+		
 //	問6.	自分の名前、年齢、誕生日を入力し、それらの情報を特定のフォーマットでコンソールに出力してください。
 //		例えば「名前: エイフォース 太郎, 年齢: 30歳, 誕生日: 1995-05-15」のように表示します。
 //		※「String.format」を使用すること。
-		System.out.println("問6：" +);
+		
+		
+		
+		
 //	問7.	問題: 商品の名前、価格、購入個数を入力し、複数購入した場合の合計金額をコンソールに出力してください。
 //		例えば、次の通り出力します。
 //		「商品: Laptopは、価格：1200円なので、3個買うと3600円です。」
-		System.out.println("問7：" +);
 		
 		
 		
