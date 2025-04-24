@@ -40,7 +40,7 @@ public class java_kiso_3 {
 //		リスト	
 //		問1.	LinkedListを作成し、いくつかの文字列を追加して、リストの最初と最後の要素を表示するプログラムを作成してください。
 		LinkedList<String> list = new LinkedList<String>(Arrays.asList("a","i","u","e","o"));
-		System.out.println(list.get(0) + list.get(4));
+		System.out.println("問1：" +list.get(0) + list.get(4));
 		
 //		問2.	ArrayListを作成し、いくつかの整数を追加して、特定の値がリストに含まれているかどうかを確認するプログラムを作成してください。
 		ArrayList<Integer> list2 = new ArrayList<Integer>();
@@ -48,7 +48,7 @@ public class java_kiso_3 {
 		list2.add(3);
 		list2.add(5);
 		list2.add(7);
-		System.out.println(list2.contains(3)); //値がある場合TRUE
+		System.out.println("問2：" +list2.contains(3)); //値がある場合TRUE
 		
 //		問3.	ArrayListを作成し、いくつかの文字列を追加して、アルファベット順にソートするプログラムを作成してください。
 		ArrayList<String> list3 = new ArrayList<String>();
@@ -57,16 +57,15 @@ public class java_kiso_3 {
 		list3.add("bravo");
 		list3.add("delta");
 		list3.sort(Comparator.naturalOrder());
-		System.out.println(list3 + "\n＝＝＝＝＝＝＝＝＝\nここまでリストの演習問題\n");
+		System.out.println("問3：" +list3 + "\n＝＝＝＝＝＝＝＝＝\nここまでリストの演習問題\n");
 			
 //		ハッシュとは	
 //		問1.	HashMapを作成し、いくつかのキーと値のペアを追加して、特定のキーに対応する値を表示するプログラムを作成してください。
-//			
+		
 //		問2.	HashSetを作成し、いくつかの文字列を追加して、セットの要素をすべて表示するプログラムを作成してください。
-//			
+			
 //		問3.	HashMapを作成し、いくつかのキーと値のペアを追加して、すべてのキーと値を表示するプログラムを作成してください。
-//			
-//			
+		
 //		配列とリスト	
 //		問1.	配列からリストへの変換
 //			整数の配列を作成し、それをArrayListに変換して、リストの要素をすべて表示するプログラムを作成してください。
