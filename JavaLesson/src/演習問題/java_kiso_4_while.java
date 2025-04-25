@@ -1,3 +1,4 @@
+package 演習問題;
 import java.util.Scanner;
 
 public class java_kiso_4_while {

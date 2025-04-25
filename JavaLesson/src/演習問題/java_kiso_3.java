@@ -1,6 +1,7 @@
 //==============================
 //			Java基礎③_コレクション_演習問題
 //==============================
+package 演習問題;
 
 import java.util.ArrayList;
 import java.util.Arrays;

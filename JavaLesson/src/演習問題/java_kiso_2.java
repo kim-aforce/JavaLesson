@@ -1,3 +1,4 @@
+package 演習問題;
 public class java_kiso_2 {
 	public static void main(String arg[]) {
 //		問1.	変数を宣言して値を表示しよう
