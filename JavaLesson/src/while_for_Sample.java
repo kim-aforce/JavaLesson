@@ -10,5 +10,10 @@ public class while_for_Sample {
 	for(String employee : employees) {
 		System.out.println(employee);
 		}
+    int a = 5;				
+    int b = 10;				
+    int c = 15;				
+    int result = (a + b) * c / (a - b);				
+    System.out.println(result);	
 	}
 }

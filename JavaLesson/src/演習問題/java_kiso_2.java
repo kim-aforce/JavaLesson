@@ -75,15 +75,7 @@ public class java_kiso_2 {
 		int productQty = productInfoSc.nextInt();
 		
 		System.out.println("商品: " + productName + "は、"+"価格："+ productPrice +"円なので "+ productQty+"個買うと"+productPrice*productQty+"円です。");
-		
-		
-		
-		
-		
-		
-		
-		
-		
+						
 		
 		
 	}
