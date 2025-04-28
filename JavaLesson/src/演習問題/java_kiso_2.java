@@ -1,4 +1,7 @@
 package 演習問題;
+
+import java.util.Scanner;
+
 public class java_kiso_2 {
 	public static void main(String arg[]) {
 //		問1.	変数を宣言して値を表示しよう
@@ -37,20 +40,41 @@ public class java_kiso_2 {
 //		（ユーザーが "太郎" と入力した場合）
 //		Scanner を使ってユーザーの名前を入力させる。
 //		こんにちは, [名前] さん！ というメッセージを表示する。
+		Scanner namesc = new Scanner(System.in);
+		System.out.println("What your name? : ");
+		
+		String inputNameString = namesc.nextLine();
+		System.out.println("こんにちは、" + inputNameString + "さん！");
 		
 //	問6.	自分の名前、年齢、誕生日を入力し、それらの情報を特定のフォーマットでコンソールに出力してください。
 //		例えば「名前: エイフォース 太郎, 年齢: 30歳, 誕生日: 1995-05-15」のように表示します。
 //		※「String.format」を使用すること。
+		Scanner info = new Scanner(System.in);
 		
+		System.out.println("名前は？");
+		String nameinfo = info.nextLine();
 		
+		System.out.println("年齢は？");
+		int ageinfo = info.nextInt();
 		
+		System.out.println("誕生日は？");
+		String birthinfo = info.next();
+		
+		System.out.println("名前："+ nameinfo + "　年齢：" + ageinfo + "　誕生日は："+ birthinfo);
 		
 //	問7.	問題: 商品の名前、価格、購入個数を入力し、複数購入した場合の合計金額をコンソールに出力してください。
 //		例えば、次の通り出力します。
 //		「商品: Laptopは、価格：1200円なので、3個買うと3600円です。」
+		Scanner productInfoSc = new Scanner(System.in);
 		
+		System.out.println("購入品");
+		String productName = productInfoSc.nextLine();
+		System.out.println("価格");
+		int productPrice = productInfoSc.nextInt();
+		System.out.println("数量");
+		int productQty = productInfoSc.nextInt();
 		
-		
+		System.out.println("商品: " + productName + "は、"+"価格："+ productPrice +"円なので "+ productQty+"個買うと"+productPrice*productQty+"円です。");
 		
 		
 		
