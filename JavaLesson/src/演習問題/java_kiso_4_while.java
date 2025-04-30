@@ -30,7 +30,7 @@ public class java_kiso_4_while {
 	            }
 	            w3sum += w3; //入力された整数は足す
 	        }
-//	        System.out.println("\n 入力された整数の合計は " + w3sum + " です。");
+	        System.out.println("\n 入力された整数の合計は " + w3sum + " です。");
 	        
 	        //do-while
 	        // 問１　whileの問１と同じ
@@ -47,10 +47,16 @@ public class java_kiso_4_while {
 				dw2++;
 			} while (dw2 <= 100);
 	        System.out.println("問2　：　"+dw2sum);
-	        //		問3　
-
-	        
-	        
+//問3　ユーザーから整数を入力させ、0が入力されるまでの合計を計算して表示するプログラムを作成してください。
+	        int dw3sum = 0;
+	        int dw3;
+	        System.out.println("整数を入力（0を入力すると終了）：");
+	        do {
+	        	dw3 = scanner.nextInt();
+				dw3sum += dw3;
+				
+			} while (dw3 != 0);
+	        System.out.println("合計は " + dw3sum + " です。");
 	        
 	        
 	        
