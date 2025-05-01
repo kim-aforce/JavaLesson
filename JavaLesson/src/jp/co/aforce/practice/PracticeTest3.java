@@ -19,6 +19,7 @@ public class PracticeTest3 {
 		name.add("佐藤次郎");
 		name.add("山田太郎"); //16行目と別人
 		name.add("高橋三郎");
+		
 		//問4　excel
 		//問5
 		System.out.println(name.get(2));

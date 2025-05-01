@@ -1,0 +1,18 @@
+package 演習問題;
+
+public class EmployeeData {
+	private  String name; 
+	private String team;
+	private String career;
+	private int pay;
+	
+	public EmployeeData(String name, String team, int pay, String career) {
+		this.name = name;
+		this.team = team;
+		this.pay = pay;
+		this.career = career;
+	}
+
+
+}
+

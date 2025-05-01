@@ -1,8 +1,30 @@
 package jp.co.aforce.practice;
 import java.util.ArrayList;
+import java.util.Random;
 
 public class PracticeTest5 {
 	public static void main(String[] args) {
+		
+		//問１
+		Random random = new Random();
+		int fortune = random.nextInt(4);
+		
+		String result = "";
+		switch (fortune) {
+		case 1: 
+			result = "吉です";
+			break;
+		case 2: 
+			result = "中吉です";
+			break;
+		case 3: 
+			result = "大吉です。";
+			break;
+		default:
+			result = "凶です。";
+			break;
+		}
+		System.out.println(result);
 		
 		//問２
 		for (int i = 1; i < 100; i++) {
@@ -36,6 +58,11 @@ public class PracticeTest5 {
 		submitters.add("斎藤");					
 		submitters.add("高橋");			
 		
+		for(String emp : employees) {
+			if (!submitters.contains(emp)) {
+				System.out.println(emp + "は未提出");
+			}
+		}
 		
 	}
 }
