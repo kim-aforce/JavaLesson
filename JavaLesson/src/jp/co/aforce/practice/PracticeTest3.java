@@ -23,6 +23,8 @@ public class PracticeTest3 {
 		//問4　excel
 		//問5
 		System.out.println(name.get(2));
+		
+		
 		//問6
 		ArrayList<Integer> list1 = new ArrayList<>();				
 		list1.add(10);				
