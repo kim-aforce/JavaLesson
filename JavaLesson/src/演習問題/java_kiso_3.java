@@ -30,7 +30,7 @@ public class java_kiso_3 {
 //		問3.	"ArrayListを作成し、以下の順に追加して、リストから「バナナ」を削除し、「オレンジ」を追加した結果をコンソールに出力してください。
 //		リンゴ、バナナ、さくらんぼ
 		List<String> collection3 = new ArrayList<String>(); 
-		collection3.add("キーウィ");
+		collection3.add("キウイ");
 		collection3.add("バナナ");
 		collection3.add("すいか");
 		System.out.println("問3：\n既存"+collection3);

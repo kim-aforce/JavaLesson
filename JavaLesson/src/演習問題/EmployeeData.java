@@ -1,10 +1,10 @@
 package 演習問題;
 
 public class EmployeeData {
-	private  String name; 
-	private String team;
-	private String career;
-	private int pay;
+	public  String name; 
+	public String team;
+	public String career;
+	public int pay;
 	
 	public EmployeeData(String name, String team, int pay, String career) {
 		this.name = name;

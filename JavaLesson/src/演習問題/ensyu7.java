@@ -28,15 +28,54 @@ public class ensyu7 {
 		infoDatas.add(new EmployeeData("田中美咲", "人事部", 32, "4年"));
 		
 		//   - 部署ごとの平均給与を計算する機能	
+		List<Integer>salary = new ArrayList<Integer>();
+		List<Integer>engineer = new ArrayList<Integer>();
+		List<Integer>HR = new ArrayList<Integer>();
 		
+		for(EmployeeData EmpInfo : infoDatas) {
+			String depart = EmpInfo.team;
+			int PayperMonth = EmpInfo.pay;
+			
+			if (depart == "営業部") {
+				salary.add(PayperMonth);
+			}else if (depart == "開発部") {
+				engineer.add(PayperMonth);
+			}else {
+				HR.add(PayperMonth);
+			}
+		}
+		int AvrSalary = ((salary.get(0) + salary.get(1)) / salary.size());
+		int AvrEngeer = ((engineer.get(0) + engineer.get(1)) / engineer.size());
+		System.out.println("営業部の平均給与：" + AvrSalary + "万円");
+		System.out.println("開発部部の平均給与：" + AvrEngeer + "万円");
+		System.out.println("開発部部の平均給与：" + HR.get(0) + "万円\n");
+
+		//		   - 勤続年数に応じた昇給額を計算する機能（1年ごとに1万円昇給）
+		for(EmployeeData Empinfo : infoDatas) {
+			int years = Integer.parseInt(Empinfo.career.replace("年", ""));
+			int newPay = Empinfo.pay + years * 1;
+			System.out.println(Empinfo.name + "さんの給与は" + newPay +  "万円です。");
+		}
+			
+		System.out.println("\n");
 		
-	
+//		   - 給与が高い順に上位3名を表示する機能
+		infoDatas.sort((a, b) -> b.pay - a.pay);
 		
-		
-		
-		
+		System.out.println("給与が高い社員TOP3：");
+		for (int i = 0; i < 3 && i < infoDatas.size(); i++) {
+			
+			EmployeeData emp = infoDatas.get(i);
+			System.out.println(emp.name + "さんが" + emp.pay + "万円");
+		}
 	}
 }
+
+
+
+
+
+
 
 
 
